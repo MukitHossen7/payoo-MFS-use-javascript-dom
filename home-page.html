@@ -1,13 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <section class="">
-      <h1 class="">Welcome to the Home page</h1>
-    </section>
+    <main class="flex justify-center mt-10">
+      <div class="mockup-phone h-full pt-5">
+        <div class="display">
+          <div class="artboard artboard-demo phone-1">
+            <!-- amount-start -->
+            <div class="stats shadow mt-5 h-full">
+              <div class="stat">
+                <div class="stat-value">9400</div>
+                <div class="stat-desc">Available Amount</div>
+              </div>
+            </div>
+            <!-- amount-end -->
+            <div class="divider mt-5"></div>
+            <!-- button-start -->
+            <div class="">
+              <button class="btn">Add Money</button>
+              <button class="btn">Cash Out</button>
+            </div>
+            <!-- button-end -->
+            <div class="divider"></div>
+            <!-- form-start -->
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Amount</span>
+                  </label>
+                  <input
+                    type="number"
+                    placeholder="Amount"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Pin</span>
+                  </label>
+                  <input
+                    type="Pin"
+                    placeholder="password"
+                    class="input input-bordered"
+                    required
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button class="btn btn-primary">Add Money</button>
+                </div>
+              </form>
+            </div>
+            <!-- form-end -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="login-form.js"></script>
   </body>
 </html>
