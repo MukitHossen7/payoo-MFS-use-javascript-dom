@@ -11,6 +11,8 @@ document.getElementById("addBtn").addEventListener("click", function (e) {
     // money.innerText = Number(totalMoney) + Number(amountValue);
     document.getElementById("money").innerText =
       Number(totalMoney) + Number(amountValue);
+  } else {
+    alert("Please enter your valid pin!!");
   }
 
   inputAmount.value = "";
