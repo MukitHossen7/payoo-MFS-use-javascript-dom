@@ -11,5 +11,6 @@ document.getElementById("outBtn").addEventListener("click", function (event) {
   } else {
     alert("Please enter your valid pin!!");
   }
-  ///
+  inputOutAmount.value = "";
+  inputOutPin.value = "";
 });
