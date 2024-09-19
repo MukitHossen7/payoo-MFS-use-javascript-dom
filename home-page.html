@@ -20,7 +20,7 @@
             <!-- amount-start -->
             <div class="stats shadow mt-5 h-full">
               <div class="stat">
-                <div class="stat-value">9400</div>
+                <div class="stat-value" id="money">9400</div>
                 <div class="stat-desc">Available Amount</div>
               </div>
             </div>
@@ -45,6 +45,8 @@
                     placeholder="Amount"
                     class="input input-bordered"
                     required
+                    id="inputAmount"
+                    autocomplete="off"
                   />
                 </div>
                 <div class="form-control">
@@ -52,14 +54,16 @@
                     <span class="label-text">Pin</span>
                   </label>
                   <input
-                    type="Pin"
-                    placeholder="password"
+                    type="password"
+                    placeholder="Enter Pin"
                     class="input input-bordered"
                     required
+                    id="inputPin"
+                    autocomplete="off"
                   />
                 </div>
                 <div class="form-control mt-6">
-                  <button class="btn btn-primary">Add Money</button>
+                  <button class="btn btn-primary" id="addBtn">Add Money</button>
                 </div>
               </form>
             </div>
@@ -68,6 +72,6 @@
         </div>
       </div>
     </main>
-    <script src="login-form.js"></script>
+    <script src="add-money.js"></script>
   </body>
 </html>
