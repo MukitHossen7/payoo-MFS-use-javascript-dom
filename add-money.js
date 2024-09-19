@@ -12,9 +12,16 @@ document.getElementById("addBtn").addEventListener("click", function (e) {
     document.getElementById("money").innerText =
       Number(totalMoney) + Number(amountValue);
   } else {
-    alert("Please enter your valid pin!!");
+    let addDemo = document.getElementById("addDemo");
+    addDemo.innerText = "Invalid Pin!";
+    addDemo.style.color = "red";
+    addDemo.style.fontWeight = "bold";
+    addDemo.style.fontSize = "12px";
   }
-
+  document.getElementById("inputPin").addEventListener("click", function () {
+    let addDemo = document.getElementById("addDemo");
+    addDemo.style.visibility = "hidden";
+  });
   inputAmount.value = "";
   inputPin.value = "";
 });
